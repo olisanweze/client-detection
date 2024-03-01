@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ejike-Nweze, Olisa M.">
+        <meta name="description" content="Client Detection">
+        <meta name="keywords" content="html, css, web, web development, javascript">
+        <title>Client Detection</title>
+        <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Source+Code+Pro:wght@200&display=swap">
+        <script src="./assets/script/app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="container flex space-between">
+                <h1>Client Detection</h1>
+                <nav>
+                    <ul class="flex">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="center">
+                <div class="container info-main">
+                    <div class="info">
+                        <h2>System</h2>
+                        <p class="operating-system"></p>
+                        <p class="language"></p>
+                        <p class="browser"></p>
+                    </div>
+                    <div class="info">
+                        <h2>Window</h2>
+                        <p class="window-width"></p>
+                        <p class="window-height"></p>
+                        <p class="window-orientation"></p>
+                    </div>
+                    <div class="info">
+                        <h2>Battery</h2>
+                        <p class="battery-level"></p>
+                        <p class="battery-status"></p>
+                    </div>
+                    <div>
+                        <h2 class="network-status"></h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
