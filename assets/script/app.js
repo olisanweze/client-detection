@@ -14,6 +14,7 @@ function getOperatingSystem(userAgent) {
     let operatingSystem = 
     userAgent.includes('Windows') ? 'Windows' :
     userAgent.includes('Macintosh') || userAgent.includes('Mac OS') ? 'Mac/iOS' :
+    userAgent.includes('Android') ? 'Android' :
     userAgent.includes('Linux') ? 'Linux' :
     'Unknown';
 
@@ -27,6 +28,7 @@ function getBrowser(userAgent) {
     userAgent.includes('Opera') || userAgent.includes('OPR') ? 'Opera' :
     userAgent.includes('Edge') || userAgent.includes('Edg') ? 'Microsoft Edge' :
     userAgent.includes('Chrome') ? 'Google Chrome' :
+    userAgent.includes('Safari') ? 'Apple Safari' :
     'Unknown';
 
     browserName.innerText = `Browser: ${browser}`;
